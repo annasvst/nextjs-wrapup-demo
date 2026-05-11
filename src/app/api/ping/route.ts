@@ -7,6 +7,10 @@ import { NextResponse } from "next/server";
  */
 
 export async function GET() {
+  return NextResponse.json({
+    ok: false,
+    message: "An error occured",
+  });
   const at = new Date().toISOString();
   console.log(`[api/ping] GET at ${at}`);
   return NextResponse.json({
