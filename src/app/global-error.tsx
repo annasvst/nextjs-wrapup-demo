@@ -1,9 +1,9 @@
 "use client";
 
-type GlobalErrorProps = {
-  error: Error & { digest?: string };
-  reset: () => void;
-};
+// type GlobalErrorProps = {
+//   error: Error & { digest?: string };
+//   reset: () => void;
+// };
 
 export default function GlobalError({ error, reset }: GlobalErrorProps) {
   return (
