@@ -18,7 +18,7 @@ async function fetchProducts(): Promise<Product[]> {
 }
 
 type ProductsPageProps = {
-  searchParams: Promise<{ fail?: any }>;
+  searchParams: Promise<{ fail?: string }>;
 };
 
 export default async function ProductsPage({
