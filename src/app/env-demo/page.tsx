@@ -18,7 +18,7 @@
  * combine env reads with one of the signals above — here we use `force-dynamic` so each request
  * sees the current server environment without needing a rebuild.
  */
-// export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 export default async function EnvDemoPage() {
   const message =
