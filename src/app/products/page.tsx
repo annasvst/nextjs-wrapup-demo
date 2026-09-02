@@ -17,9 +17,9 @@ async function fetchProducts(): Promise<Product[]> {
   return data.map((p) => ({ id: p.id, title: p.title }));
 }
 
-// type ProductsPageProps = {
-//   searchParams: Promise<{ fail?: string }>;
-// };
+type ProductsPageProps = {
+  searchParams: Promise<{ fail?: string }>;
+};
 
 export default async function ProductsPage({
   searchParams,
